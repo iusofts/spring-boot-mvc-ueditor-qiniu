@@ -31,11 +31,7 @@ public class FileType {
 	 * @return
 	 */
 	public static String getSuffixByFilename ( String filename ) {
-		filename = filename.substring( filename.lastIndexOf( "." ) ).toLowerCase();
-		if(!types.containsValue(filename.toLowerCase()))
-			return types.get(FileType.JPG);
-		return filename;
-		
+		return filename.substring(filename.lastIndexOf(".")).toLowerCase();
 	}
 	
 }
